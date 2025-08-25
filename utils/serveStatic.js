@@ -28,7 +28,5 @@ export async function serveStatic(req, res, baseDir) {
         `<html><h1>Server Error: ${error.code}</h1></html>`
       );
     }
-
-    console.log(error.code);
   }
 }
