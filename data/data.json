@@ -37,5 +37,35 @@
     "timeStamp": "7 August 2025 at 15:21",
     "text": "이제는 <b>제대로</b>.. ",
     "title": "다시 제대로"
+  },
+  {
+    "location": "서울",
+    "timeStamp": "13 August 2025 at 12:27",
+    "text": "EventEmitter test",
+    "title": "이벤트테스트"
+  },
+  {
+    "location": "서울",
+    "timeStamp": "13 August 2025 at 12:27",
+    "text": "EventEmitter testsdf",
+    "title": "이벤트테스트"
+  },
+  {
+    "location": "seoul, rok",
+    "timeStamp": "28 August 2025 at 12:28",
+    "text": "event test for emit",
+    "title": "event test"
+  },
+  {
+    "location": "seoul",
+    "timeStamp": "28 August 2025 at 12:30",
+    "text": "newly",
+    "title": "newly"
+  },
+  {
+    "location": "ㄴㄹ",
+    "timeStamp": "21 August 2025 at 12:34",
+    "text": "ㅈㅂㄷㄱ",
+    "title": "다시"
   }
 ]
