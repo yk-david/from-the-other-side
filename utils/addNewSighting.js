@@ -8,9 +8,10 @@ export async function addNewSighting(newSighting) {
     sightings.push(newSighting);
 
     const pathJSON = path.join("data", "data.json");
-
+    // Overwrite the existing JSON data by new sightings 
     await fs.writeFile(pathJSON, JSON.stringify(sightings, null, 2), "utf8");
   } catch (error) {
     throw new Error(error);
   }
 }
+
