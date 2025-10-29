@@ -6,8 +6,7 @@ export async function getData() {
     const pathJSON = path.join("data", "data.json");
     const data = await fs.readFile(pathJSON, "utf8");
     const parsedData = JSON.parse(data);
-    // console.log(`This is ${data} and its type is ${typeof data}`);
-    // console.log(`This is ${parsedData} and its type is ${typeof parsedData}`);
+
     return parsedData;
   } catch (error) {
     console.log(error);

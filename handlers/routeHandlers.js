@@ -14,10 +14,10 @@ export async function handleGet(res) {
 
 export async function handlePost(req, res) {
   try {
-    const parsedBody = await parseJSONBody(req);
+    const parsedBody = await parseJSONBody(req); // Receive `data` from client request
     const sanitizedBody = sanitizeInput(parsedBody);
     await addNewSighting(sanitizedBody);
-    sightingEvents.emit("sighting-added", sanitizedBody);
+    sightingEvents.emit("sighting-added", sanitizedBody); // the callback defined for `sanitizeBody` is just console.log. This event is just printing purpose.
     sendResponse(res, 201, "application/json", JSON.stringify(sanitizedBody));
   } catch (error) {
     sendResponse(

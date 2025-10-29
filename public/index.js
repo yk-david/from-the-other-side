@@ -1,5 +1,5 @@
 try {
-  const data = await fetch("/api");
+  const data = await fetch("/api"); // Top level await use in ES module
   const response = await data.json();
   renderCards(response);
 } catch (err) {
