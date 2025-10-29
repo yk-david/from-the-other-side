@@ -14,9 +14,9 @@ const server = http.createServer(async (req, res) => {
     }
   } else if (req.url === "/api/news") {
     return await handleNews(req, res);
-  } else if (!req.url.startsWith("/api")) {
-    return await serveStatic(req, res, __dirname);
   }
+
+  return await serveStatic(req, res, __dirname);
 });
 
 server.listen(PORT, console.log(`Server is running on port: ${PORT}`));
