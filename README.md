@@ -8,6 +8,13 @@ A web application for tracking and sharing ghost sightings. Users can view exist
 
 *   Node.js installed on your machine.
 
+### Dependencies
+
+This application uses the following libraries and technologies:
+
+*   **sanitize-html**: For sanitizing user-submitted HTML content to prevent XSS attacks.
+*   **Server-Sent Events (SSE)**: For real-time news updates via the `/api/news` endpoint.
+
 ### Installation
 
 1.  Clone the repository.
